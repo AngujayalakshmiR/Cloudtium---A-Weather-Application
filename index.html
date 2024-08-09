@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <div class="card">
+        <div class="search">
+            <input class="text" placeholder="Enter city name" spellcheck="false">
+            <button class="animation"><img
+                    src="images/searchicon.png"></button>
+        </div>
+
+
+        <div class="weather">
+
+            <img src="" class="weather-icon">
+            <div class="temp-condition">
+
+                <h1 class="temp"></h1>
+                <p class="weather-condition"></p>
+
+            </div>
+        </div>
+        <h2 class="city"></h2>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <div class="details">
+            <div class="col">
+                <img src="images/humidity.png">
+                <div>
+                    <p class="humidity"></p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="images/wind.png">
+                <div>
+                    <p class="wind"></p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="cloudPane">
+        <div class="stars">
+            <div class="star" id="star1"></div>
+            <div class="star"></div>
+            <div class="star" id="star2"></div>
+            <div class="star"></div>
+            <div class="star" id="star3"></div>
+            <div class="star"></div>
+            <div class="star" id="star4"></div>
+            <div class="star"></div>  
+            <div class="star" id="star5"></div>
+            <div class="star"></div>  
+            <div class="star" id="star6"></div>
+            <div class="star"></div>  
+            <div class="star" id="star7"></div>
+            <div class="star"></div>  
+            <div class="star" id="star8"></div>
+            <div class="star"></div>  
+            <div class="star" id="star9"></div>
+            <div class="star"></div>  
+            <div class="star" id="star10"></div>
+             <div class="star"></div> 
+            <div class="star" id="star11"></div>
+             <div class="star"></div> 
+        </div>
+
+        <div class="bigCloud" id="cloud1">
+            <div class="largeCircle" id="circ1">
+                 
+                <div class="largeCircle" id="circ1shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ2">
+                <div class="middleCircle" id="circ2shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ3">
+                <div class="middleCircle" id="circ3shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ4"></div>
+            <div class="smallCircle" id="circ5">
+                <div class="smallCircle" id="circ5shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ6">
+                <div class="smallCircle" id="circ6shadow"></div>
+            </div>
+        </div>
+        <div class="bigCloud" id="cloud2">
+            <div class="largeCircle" id="circ1">
+                <div class="largeCircle" id="circ1shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ2">
+                <div class="middleCircle" id="circ2shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ3">
+                <div class="middleCircle" id="circ3shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ4"></div>
+            <div class="smallCircle" id="circ5">
+                <div class="smallCircle" id="circ5shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ6">
+                <div class="smallCircle" id="circ6shadow"></div>
+            </div>
+        </div>
+
+        <div class="bigCloud" id="cloud3">
+            <div class="largeCircle" id="circ1">
+                <div class="largeCircle" id="circ1shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ2">
+                <div class="middleCircle" id="circ2shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ3">
+                <div class="middleCircle" id="circ3shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ4"></div>
+            <div class="smallCircle" id="circ5">
+                <div class="smallCircle" id="circ5shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ6">
+                <div class="smallCircle" id="circ6shadow"></div>
+            </div>
+        </div>
+
+        <div class="bigCloud" id="cloud4">
+            <div class="largeCircle" id="circ1">
+                <div class="largeCircle" id="circ1shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ2">
+                <div class="middleCircle" id="circ2shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ3">
+                <div class="middleCircle" id="circ3shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ4"></div>
+            <div class="smallCircle" id="circ5">
+                <div class="smallCircle" id="circ5shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ6">
+                <div class="smallCircle" id="circ6shadow"></div>
+            </div>
+        </div>
+
+        <div class="bigCloud" id="cloud5">
+            <div class="largeCircle" id="circ1">
+                <div class="largeCircle" id="circ1shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ2">
+                <div class="middleCircle" id="circ2shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ3">
+                <div class="middleCircle" id="circ3shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ4"></div>
+            <div class="smallCircle" id="circ5">
+                <div class="smallCircle" id="circ5shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ6">
+                <div class="smallCircle" id="circ6shadow"></div>
+            </div>
+        </div>
+
+        <div class="bigCloud" id="cloud6">
+            <div class="largeCircle" id="circ1">
+                <div class="largeCircle" id="circ1shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ2">
+                <div class="middleCircle" id="circ2shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ3">
+                <div class="middleCircle" id="circ3shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ4"></div>
+            <div class="smallCircle" id="circ5">
+                <div class="smallCircle" id="circ5shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ6">
+                <div class="smallCircle" id="circ6shadow"></div>
+            </div>
+        </div>
+
+        <div class="bigCloud" id="cloud7">
+            <div class="largeCircle" id="circ1">
+                <div class="largeCircle" id="circ1shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ2">
+                <div class="middleCircle" id="circ2shadow"></div>
+            </div>
+            <div class="middleCircle" id="circ3">
+                <div class="middleCircle" id="circ3shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ4"></div>
+            <div class="smallCircle" id="circ5">
+                <div class="smallCircle" id="circ5shadow"></div>
+            </div>
+            <div class="smallCircle" id="circ6">
+                <div class="smallCircle" id="circ6shadow"></div>
+            </div>
+        </div>
+</div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
